@@ -3,34 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎉 Happy Birthday NALAYAK</title>
+  <title>Happy Birthday NALAYAK 🎂</title>
   <style>
     body {
-      background: linear-gradient(135deg, #f2ebfa, #e5d3ff);
+      margin: 0;
+      padding: 0;
       height: 100vh;
+      background: radial-gradient(circle, #e9e3f6 10%, #d8c7f3 90%);
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       font-family: 'Poppins', sans-serif;
-      color: #4a2f7c;
-      text-align: center;
-      animation: fadeIn 2s ease-in;
+      overflow: hidden;
     }
-    h1 {
-      font-size: 48px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      background: linear-gradient(45deg, #6b3fa0, #c491ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .popup {
+      font-size: 2.5rem;
+      color: #4b2bb3;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+      opacity: 0;
+      transform: scale(0.7);
+      animation: fadeIn 3s ease forwards;
     }
     @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
   </style>
 </head>
 <body>
-  <h1>💜 HAPPY BIRTHDAY NALAYAK 💜</h1>
+  <div class="popup">HAPPY BIRTHDAY NALAYAK 💜</div>
+
+  <audio autoplay>
+    <source src="https://cdn.pixabay.com/download/audio/2023/08/02/audio_1574ffb8e1.mp3?filename=romantic-background-music-178911.mp3" type="audio/mpeg">
+  </audio>
 </body>
 </html>
